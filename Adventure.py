@@ -31,6 +31,8 @@ def Climb():
 #suicide?
 def Leave():
     while True:
+        cliff = Image.open('cliff.jpg')
+        cliff.show()
         Input = input("You leave and keep following the path to the edge of a clif. would you like to jump(j) or go back(b): ")
         if Input.lower() == "j":
             print("Take the leap and fall all the way to the bottom. Your head smashed into the floor and explodes into a million pieces. \nThe end.")
@@ -44,6 +46,8 @@ def Leave():
 #back to a clif
 def NoParties():
     while True:
+        bottom_cliff = Image.open('bottom_cliff.jpg')
+        bottom_cliff.show()
         Input = input("you go outside the abandoned house and find yourself at the bottom of a cliff .\nWould you like to climb it(c) or keep walking(w)")
         if Input.lower() == "c":
             Climb()
@@ -58,6 +62,8 @@ def Document():
     while True:
         Input = input("you successfully document the new creatures and post your findings. Do you like parties? (y/n): ")
         if Input.lower() == "y":
+            money = Image.open('money.jpg')
+            money.show()
             print("You get home, celebrate you findings and make millions. The end")
         elif Input.lower() == "n":
             NoParties()
@@ -81,7 +87,7 @@ def Enter():
 #right side of the path
 def Right():
     while True:
-        abandoned_house = Image.open('house2.jpg')
+        abandoned_house = Image.open('house.jpg')
         abandoned_house.show()
         Input = input("Through the right path, you see a huge abandoned house.\nWould you like to enter(e) it or leave(l): ")
         if Input.lower() == "e":
