@@ -65,6 +65,7 @@ def Document():
             money = Image.open('money.jpg')
             money.show()
             print("You get home, celebrate you findings and make millions. The end")
+            quit()
         elif Input.lower() == "n":
             NoParties()
         else:
